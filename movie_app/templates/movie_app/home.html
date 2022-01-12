@@ -1,0 +1,6 @@
+<h1>Message board homepage</h1>
+<ul>
+    {% for movie in all_posts_list %}
+        <li><a href="{{ movie.get_url }}">{{movie.name}}</a>,</li>
+    {% endfor %}
+</ul>
